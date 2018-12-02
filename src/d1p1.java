@@ -9,7 +9,6 @@ public class d1p1 {
 
     public static void main(String[] args) {
         System.out.println("Starting! Day 1, Part 1");
-        System.out.println("Reading loading file!!");
         List<String> frequencies = populateList("rsc/d1p1");
         if (frequencies.size() != 0) {
             System.out.println("Adding up frequencies");
@@ -29,6 +28,7 @@ public class d1p1 {
     }
 
     public static List<String> populateList(String strFile) {
+        System.out.println("Reading loading file!!");
         File file = new File(strFile);
         List<String> frequencies = new ArrayList<>();
         try {

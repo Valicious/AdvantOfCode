@@ -12,7 +12,6 @@ public class d1p2 {
 
     public static void main(String[] args) {
         System.out.println("Starting! Day 1, Part 2");
-        System.out.println("Loading file!");
         List<String> frequencies = d1p1.populateList("rsc/d1p1");
         if (frequencies.size() != 0) {
             firstFinalFreq = -1;
