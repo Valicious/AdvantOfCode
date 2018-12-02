@@ -7,13 +7,20 @@ public class d2p2 {
     public static void main(String[] args) {
         System.out.println("Starting! Day 2, Part 2");
         List<String> ids = d1p1.populateList("rsc/d2p1");
+        long startTime = System.currentTimeMillis();
+
+
+
         ids.forEach(d2p2::checkIds);
         IDs.values().forEach(cur -> {
             if (cur.size() == 1)
                 return;
             System.out.println(cur.toString());
         });
-        System.out.println();
+
+        long stopTime = System.currentTimeMillis();
+        long elapsedTime = stopTime - startTime;
+        System.out.println(elapsedTime);
     }
 
     private static void checkIds(String value) {
