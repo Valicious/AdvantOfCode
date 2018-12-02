@@ -9,8 +9,6 @@ public class d2p2 {
         List<String> ids = d1p1.populateList("rsc/d2p1");
         long startTime = System.currentTimeMillis();
 
-
-
         ids.forEach(d2p2::checkIds);
         IDs.values().forEach(cur -> {
             if (cur.size() == 1)
@@ -20,7 +18,7 @@ public class d2p2 {
 
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
-        System.out.println(elapsedTime);
+        System.out.println(elapsedTime + "ms");
     }
 
     private static void checkIds(String value) {
